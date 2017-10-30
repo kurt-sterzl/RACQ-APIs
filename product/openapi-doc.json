@@ -23,5 +23,15 @@
         }
       ]
     }
+  },
+  "components": {
+    "securitySchemes": {
+      "PII Member": {
+        "type": "apiKey",
+        "description": "Personally Identifiable Member information",
+        "name": "APIKey",
+        "in": "header"
+      }
+    }
   }
 }
