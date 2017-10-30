@@ -22,6 +22,19 @@
           }
         }
       ]
+    },
+    "/member/{Id}": {
+      "parameters": [
+        {
+          "name": "Id",
+          "in": "path",
+          "description": "Membership ID",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
     }
   },
   "components": {
