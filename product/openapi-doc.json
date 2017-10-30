@@ -24,6 +24,19 @@
       ]
     },
     "/member/{Id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json/member": {
+                "schema": {
+                  "$ref": "#/components/schemasmember"
+                }
+              }
+            }
+          }
+        }
+      },
       "parameters": [
         {
           "name": "Id",
@@ -38,6 +51,19 @@
     }
   },
   "components": {
+    "schemas": {
+      "member": {
+        "properties": {
+          "first_name": {
+            "type": "string"
+          },
+          "membership_card_no": {
+            "description": "Membership Card Number",
+            "type": "string"
+          }
+        }
+      }
+    },
     "securitySchemes": {
       "PII Member": {
         "type": "apiKey",
